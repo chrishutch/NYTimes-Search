@@ -1,6 +1,7 @@
 .jumbotron{
+	margin: 20px;
   border-radius: .25rem;
-  background-color:#9CA1F8;
+  background-color:purple;
 }
 .jumbotron .container h1.display-4{
   text-align: center;
