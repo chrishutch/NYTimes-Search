@@ -23,10 +23,14 @@ $(document).ready(function(){
 			}).then(function(result) {
 			  console.log(result);
 			  for (var i = 0; i < result.response.docs.length; i++){
+			  	var well = $('<div>');
 			  	var html = $('<a>');
+			  	well.addClass('well well-lg');
 			  	html.attr('href',result.response.docs[i].web_url);
 			  	html.text(result.response.docs[i].headline.main);
-			  	$('#articles').append(html);
+			  	well.append(html);
+			  	$('#articles').append(well.append(html));
+			  	console.log(html);
 			  	console.log(result.response.docs[i].web_url);
 			  	console.log(result.response.docs[i].headline.main);
 			  	console.log(result.response.docs[i].pub_date);

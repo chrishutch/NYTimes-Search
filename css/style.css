@@ -6,3 +6,9 @@
   text-align: center;
   color:#FFF;
 }
+.well{
+	margin-bottom: 15px;
+	padding: 10px 0px 10px 5px;
+	border: 2px solid grey;
+	background-color: #F7F7F8;
+}
