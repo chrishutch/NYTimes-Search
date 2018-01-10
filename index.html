@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>NY Times Search</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4"><img src="images/svg/newsicon.svg" width="40"; />New York Times Search</h1>
+        </div>
+      </div>
+      <div class="card">
+          <h3 class="card-header primary-color white-text">Search Parameters</h3>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Search Terms:</label>
+                    <input type="search" class="form-control" id="searchTerm" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Number of Records to Retrieve:</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>5</option>
+                      <option>4</option>
+                      <option>3</option>
+                      <option>2</option>
+                      <option>1</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputstartYear">Start Year (Optional):</label>
+                    <input type="search" class="form-control" id="startYear" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputendYear">End Year (Optional):</label>
+                    <input type="search" class="form-control" id="endYear" placeholder="">
+                  </div>
+                  <button type="submit" class="btn btn-primary" id="searchButton">Search</button>
+                  <button type="submit" class="btn btn-primary" id="clearResults">Clear Results</button>
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+      <br>
+      <div class="card" id="articles">
+          <h3 class="card-header primary-color white-text" id="searchHeading">Top Articles</h3>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12">
+                <panel>
+                
+
+               </panel>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

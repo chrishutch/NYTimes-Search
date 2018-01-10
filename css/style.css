@@ -1,0 +1,8 @@
+.jumbotron{
+  border-radius: .25rem;
+  background-color:#20315a;
+}
+.jumbotron .container h1.display-4{
+  text-align: center;
+  color:#FFF;
+}
