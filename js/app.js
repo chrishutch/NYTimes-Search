@@ -1,10 +1,11 @@
 $(document).ready(function(){
 	$('#searchButton').on('click',function(){
 	event.preventDefault();
-
+	$('#searchHeading').text('Search Results:');
 	var wordSubmit = $('#searchTerm').val();
 	console.log($('#searchTerm').val());
 	var articleNumber = $('#inputState').val();
+	console.log($('#inputState').val());
 	var beginDate = $('#startYear').val();
 	var endDate = $('#endYear').val();
 	
@@ -22,18 +23,23 @@ $(document).ready(function(){
 			  method: 'GET'
 			}).then(function(result) {
 			  console.log(result);
-			  for (var i = 0; i < result.response.docs.length; i++){
+			  for (var i = 0; i < articleNumber; i++){
 			  	var well = $('<div>');
 			  	var html = $('<a>');
+			  	var summary = $('<h3>');
 			  	well.addClass('well well-lg');
+			  	summary.addClass('summaryText');
 			  	html.attr('href',result.response.docs[i].web_url);
 			  	html.text(result.response.docs[i].headline.main);
-			  	well.append(html);
-			  	$('#articles').append(well.append(html));
+			  	summary.text(result.response.docs[i].snippet);
+			  	well.append(html).append(summary);
+			  	$('#articles').append(well.append(html).append(summary));
 			  	console.log(html);
 			  	console.log(result.response.docs[i].web_url);
 			  	console.log(result.response.docs[i].headline.main);
 			  	console.log(result.response.docs[i].pub_date);
+			   	console.log(result.response.docs[i].snippet);
+
 			  }
 			  
 			})

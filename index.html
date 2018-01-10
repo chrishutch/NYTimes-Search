@@ -1,8 +1,8 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="EN">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
@@ -28,9 +28,9 @@
                     <input type="search" class="form-control" id="searchTerm" placeholder="">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Number of Articles to Retrieve:</label>
+                    <label for="numberArticles">Number of Articles to Retrieve:</label>
                     <select id="inputState" class="form-control">
-                      <option selected>10</option>
+                      <option>10</option>
                       <option>9</option>
                       <option>8</option>
                       <option>7</option>
@@ -44,11 +44,11 @@
                   </div>
                   <div class="form-group">
                     <label for="exampleInputstartYear">Start Year (Optional):</label>
-                    <input type="search" class="form-control" id="startYear" placeholder="2016">
+                    <input type="search" class="form-control" id="startYear" value="2017">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputendYear">End Year (Optional):</label>
-                    <input type="search" class="form-control" id="endYear" placeholder="2017">
+                    <input type="search" class="form-control" id="endYear" value="2018">
                   </div>
                   <button type="submit" class="btn btn-primary" id="searchButton">Search</button>
                   <button type="submit" class="btn btn-primary" id="clearResults">Clear Results</button>
@@ -63,6 +63,7 @@
           <div class="card-body">
             <div class="row">
               <div class="col-md-12">
+                <h3 id="searchHeading"></h3>
                 <panel id="articles">
                </panel>
               </div>

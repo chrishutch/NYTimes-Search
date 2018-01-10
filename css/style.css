@@ -1,6 +1,6 @@
 .jumbotron{
   border-radius: .25rem;
-  background-color:#20315a;
+  background-color:#9CA1F8;
 }
 .jumbotron .container h1.display-4{
   text-align: center;
@@ -8,7 +8,19 @@
 }
 .well{
 	margin-bottom: 15px;
-	padding: 10px 0px 10px 5px;
-	border: 2px solid grey;
+	padding: 20px 10px 15px 10px;
+	border: 2px solid #F7F7F8;
 	background-color: #F7F7F8;
+	font-size: 24px;
+
+}
+.summaryText{
+	padding: 5px;
+	font-size: 18px
+}
+a{
+	color: #180DA4;
+}
+a:hover{
+	color: purple;
 }
